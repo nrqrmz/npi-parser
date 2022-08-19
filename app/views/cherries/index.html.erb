@@ -1,0 +1,13 @@
+<h1>Cherries#index</h1>
+<p>Find me in app/views/cherries/index.html.erb</p>
+
+<ul>
+  <% @cherries.each do |cherry| %>
+    <li>
+      <%= cherry.name %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "create a new query", new_cherry_path %>
