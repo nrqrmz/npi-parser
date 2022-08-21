@@ -11,3 +11,8 @@
 
 
 <%= link_to "create a new query", new_cherry_path %>
+
+<%= simple_form_for(@cherry) do |f| %>
+  <%= f.input :npi %>
+  <%= f.submit %>
+<% end %>

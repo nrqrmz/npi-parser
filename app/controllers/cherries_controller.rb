@@ -1,10 +1,10 @@
 class CherriesController < ApplicationController
   def index
     @cherries = Cherry.all
+    @cherry = Cherry.new
   end
 
   def new
-    @cherry = Cherry.new
   end
 
   def create
